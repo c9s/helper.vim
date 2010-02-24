@@ -1,0 +1,18 @@
+
+Helper.vim
+==========
+Help text renderer. provide togglable help text in vim buffer.
+
+
+Example
+=======
+
+    vnew
+    cal g:Help.reg("Git Menu",join([
+        \" <Enter> - execute item",
+        \" o       - open node",
+        \" O       - open node recursively",
+        \],"\n"),1)
+
+
+
