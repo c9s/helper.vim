@@ -6,7 +6,7 @@ Help text renderer. provide togglable help text in vim buffer.
 
 Example
 =======
-just call Helper register function after creating a new buffer:
+Just call Helper register function after creating a new buffer:
 
     :vnew
     :cal g:Help.reg("Git Menu",join([
@@ -15,4 +15,11 @@ just call Helper register function after creating a new buffer:
         \" O       - open node recursively",
         \],"\n"),1)
 
+You can also add some syntax highlighting:
+
+    " Initialize Help Syntax
+    syntax match HelpComment +^#.*+
+    syntax match String      +".\{-}"+
+    hi HelpComment ctermfg=blue
+    hi String      ctermfg=red
 
