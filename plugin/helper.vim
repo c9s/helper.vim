@@ -1,6 +1,7 @@
 " Help {{{
 " Author:  Cornelius <cornelius.howl@gmail.com>
 " Version: 0.2
+" ScriptType: plugin
 
 let g:Help = {}
 
