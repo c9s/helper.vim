@@ -26,11 +26,13 @@ fun! g:Help.redraw()
 endf
 
 fun! s:toggle_fulltext()
+  set modifiable
   if exists('b:help_fulltext_on')
     cal g:Help.hide_fulltext()
   else
     cal g:Help.show_fulltext()
   endif
+  set nomodifiable
 endf
 
 fun! g:Help.show_brief()
